@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Balanc3-Consensys/crypto-trade-parser#readme",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "fast-csv": "^2.4.0",
     "moment": "^2.18.1"
   },
