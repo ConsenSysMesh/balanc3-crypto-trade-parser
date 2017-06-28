@@ -27,7 +27,7 @@ class Parser {
 
   fromString(string, csvOptions) {
     let opts = Object.assign(defaultOpts, csvOptions);
-    return this._process(csv.fromPath(string, opts));
+    return this._process(csv.fromString(string, opts));
   }
 
   _process(csvStream) {
