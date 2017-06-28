@@ -59,7 +59,7 @@ A entry has the following format:
   "fee": {
     "percentage": 0.15,
     "absolute": {
-      "ZEC": 0.000015009398496241134,
+      "ETC": 0.000015009398496241134,
       "BTC": 0.000015970000000000567
     }
   },
@@ -72,7 +72,6 @@ A entry has the following format:
     "valueNet": 0.01063372
   }
 }
-
 ```
 
 * `exchange`: [**string**] the exchange name/source.
