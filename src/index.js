@@ -16,18 +16,18 @@ class Parser {
 
   fromStream(stream, csvOptions) {
     let opts = Object.assign(defaultOpts, csvOptions);
-    return _process(stream.pipe(csv(opts)));
+    return this._process(stream.pipe(csv(opts)));
   }
 
-  fromPath(pathString) {
+  fromPath(pathString, csvOptions) {
     let opts = Object.assign(defaultOpts, csvOptions);
-    return _process(csv.fromPath(pathString, opts));
+    return this._process(csv.fromPath(pathString, opts));
 
   }
 
-  fromString(string) {
+  fromString(string, csvOptions) {
     let opts = Object.assign(defaultOpts, csvOptions);
-    return _process(csv.fromPath(string, opts));
+    return this._process(csv.fromPath(string, opts));
   }
 
   _process(csvStream) {
